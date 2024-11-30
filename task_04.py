@@ -9,6 +9,8 @@
 
 from abc import ABC, abstractclassmethod
 
+# Інтерфейси
+
 class ToPrint(ABC):
     @abstractclassmethod
     def to_print(self):
@@ -23,6 +25,8 @@ class ToCopy(ABC):
     @abstractclassmethod
     def to_copy(self):
         pass
+
+# Класи пристроїв
 
 class Printer(ToPrint):
     def to_print(self):
